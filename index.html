@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>java script</title>
+    <link rel="stylesheet" href="js.css">
+</head>
+<body>
+    <img src="stock-photo-142984111-1500x1000.jpg" alt="deer" width="200px" height="200px">
+    <img src="n.jpg" alt="nature" width="200px" height="200px">
+    <div>
+        <input type="button" value="deer" onclick="increase()">
+        <input type="button" value="nature" onclick="de()">
+    </div>
+    <script>
+        let pic1=document.querySelectorAll("img")[0];
+        let pic2=document.querySelectorAll("img")[1];
+        function increase(){
+            pic2.style.display="none";
+            pic1.style.display="inline";
+        }
+        function de(){
+            pic1.style.display="none";
+            pic2.style.display="inline";
+        }
+
+    </script>
+</body>
+</html>
